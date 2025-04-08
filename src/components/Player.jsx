@@ -8,9 +8,9 @@ const [isEditing, setIsEditing] = useState(false);
 const handleName = () => {
 
   if(isEditing){
-setIsEditing(prevState => !prevState);
 onChangeName(symbol, playerName);
   }
+  setIsEditing(prevState => !prevState);
 }
 
 function handleChange(e){
